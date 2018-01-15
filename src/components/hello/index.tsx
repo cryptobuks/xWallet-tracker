@@ -1,16 +1,12 @@
 import * as React from 'react';
-import styled from 'styled-components';
-
-const P = styled.p`
-  color: red;
-  margin-top: 5rem;
-`;
+import P, { Title } from './styled';
 
 class Hello extends React.Component {
   render() {
     return (
       <div className="hello">
-      <P>hello world</P>  
+      <Title color="black">Title</Title>  
+      <P color="green">hello world</P>  
       </div>
     );
   }

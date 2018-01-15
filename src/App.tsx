@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import Hello from './hello';
+import Hello from './components/hello';
 
 const logo = require('./logo.svg');
 
