@@ -12,7 +12,11 @@ async function get() {
 async function ticker(valuta: string= defaultValuta): Promise<string> {
   const data = await get();
   if (typeof data[valuta] !== 'object') { valuta = defaultValuta; }
-  return `${data[valuta]['15m'].toLocaleString()} ${data[valuta].symbol}`;
+  try {
+    return `${data[valuta]['15m'].toLocaleString()} ${data[valuta].symbol}`;
+  } catch {
+    return '';
+  }
 }
 
 export default ticker;
