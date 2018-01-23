@@ -1,11 +1,11 @@
 import Http from '../../http';
-import blockchainInfo from '../';
+import { URI } from '../';
 import { Ticker } from './data';
 
 const defaultValuta = 'RUB';
 
 async function get() {
-  const data = await Http.get(`${blockchainInfo.uri}ticker`) as Ticker;
+  const data = await Http.get(`${URI}ticker`) as Ticker;
   return data;
 }
 

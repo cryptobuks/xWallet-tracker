@@ -1,5 +1,5 @@
 import * as React from 'react';
-import GetPrice from '../../shared/api/blockhain.info/ticker/index';
+import { GetPrice } from '../../shared/api/blockhain.info';
 
 class BitcoinPrice extends React.Component<any, State> {
   constructor(props: any) {
