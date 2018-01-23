@@ -6,6 +6,6 @@ import './index.css';
 
 render(
   <App />,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLDivElement
 );
 registerServiceWorker();
