@@ -1,0 +1,27 @@
+{
+  "name": "xwallet-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "raf": "^3.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts-ts": "2.13.0",
+    "source-map-explorer": "^1.5.0",
+    "styled-components": "^3.1.6",
+    "typescript": "2.7.1"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.9",
+    "@types/node": "^8.5.2",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3"
+  }
+}
